@@ -236,6 +236,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "progress": false,
             "outputPath": "dist/website/browser",
             "index": "src/website/src/index.html",
             "main": "src/website/src/main.ts",

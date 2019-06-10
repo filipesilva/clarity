@@ -3,6 +3,7 @@
   "version": "2.0.0",
   "private": true,
   "scripts": {
+    "postinstall": "npm run website:news",
     "build:icons:web": "webpack --config webpack.icons.config.js",
     "build:icons:css": "sass --source-map --precision=8 ./src/clr-icons/clr-icons.scss ./dist/clr-icons/clr-icons.css",
     "build:icons:optimize": "csso -i ./dist/clr-icons/clr-icons.css -o ./dist/clr-icons/clr-icons.min.css -s file;",
@@ -95,10 +96,10 @@
     "zone.js": "~0.9.1"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "0.800.0",
+    "@angular-devkit/build-angular": "0.800.2",
     "@angular-devkit/build-ng-packagr": "0.800.0",
     "@angular-devkit/core": "8.0.0",
-    "@angular/cli": "8.0.0",
+    "@angular/cli": "8.0.2",
     "@angular/compiler-cli": "8.0.0",
     "@angular/language-service": "8.0.0",
     "@compodoc/compodoc": "1.1.9",
@@ -137,7 +138,6 @@
     "karma-sauce-launcher": "2.0.2",
     "karma-scss-preprocessor": "4.0.0",
     "lite-server": "2.4.0",
-    "netlify-lambda": "1.4.5",
     "ng-packagr": "5.2.0",
     "node-sass": "4.12.0",
     "npm-run-all": "4.1.5",
@@ -161,7 +161,6 @@
     "typescript": "3.4.5",
     "uglifyjs": "2.4.11",
     "uglifyjs-webpack-plugin": "2.1.2",
-    "webpack-cli": "3.3.1",
     "xml-js": "1.6.11"
   },
   "engines": {

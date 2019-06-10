@@ -20,8 +20,7 @@ const documentationRoutes: Routes = [
     children: [
       {
         path: 'get-started',
-        loadChildren: () =>
-          import('src/app/documentation/get-started/get-started.module').then(m => m.GetStartedModule),
+        loadChildren: 'src/app/documentation/get-started/get-started.module#GetStartedModule',
       },
       {
         path: '',
@@ -33,8 +32,7 @@ const documentationRoutes: Routes = [
       },
       {
         path: 'accordion',
-        loadChildren: () =>
-          import('src/app/documentation/demos/accordion/accordion.demo.module').then(m => m.AccordionDemoModule),
+        loadChildren: 'src/app/documentation/demos/accordion/accordion.demo.module#AccordionDemoModule',
         data: {
           bodyClass: 'page-accordion-view',
           browserTitle: 'Accordion',
@@ -42,8 +40,7 @@ const documentationRoutes: Routes = [
       },
       {
         path: 'alerts',
-        loadChildren: () =>
-          import('src/app/documentation/demos/alert/alerts.demo.module').then(m => m.AlertsDemoModule),
+        loadChildren: 'src/app/documentation/demos/alert/alerts.demo.module#AlertsDemoModule',
         data: {
           bodyClass: 'page-alerts',
           browserTitle: 'Alerts',
@@ -51,8 +48,7 @@ const documentationRoutes: Routes = [
       },
       {
         path: 'app-layout',
-        loadChildren: () =>
-          import('src/app/documentation/demos/app-layout/app-layout.demo.module').then(m => m.AppLayoutDemoModule),
+        loadChildren: 'src/app/documentation/demos/app-layout/app-layout.demo.module#AppLayoutDemoModule',
         data: {
           bodyClass: 'page-app-layout',
           browserTitle: 'Application Layout',
@@ -60,8 +56,7 @@ const documentationRoutes: Routes = [
       },
       {
         path: 'badges',
-        loadChildren: () =>
-          import('src/app/documentation/demos/badges/badges.demo.module').then(m => m.BadgesDemoModule),
+        loadChildren: 'src/app/documentation/demos/badges/badges.demo.module#BadgesDemoModule',
         data: {
           bodyClass: 'page-badges',
           browserTitle: 'Badges',
@@ -69,8 +64,7 @@ const documentationRoutes: Routes = [
       },
       {
         path: 'buttons',
-        loadChildren: () =>
-          import('src/app/documentation/demos/buttons/buttons.demo.module').then(m => m.ButtonsDemoModule),
+        loadChildren: 'src/app/documentation/demos/buttons/buttons.demo.module#ButtonsDemoModule',
         data: {
           bodyClass: 'page-buttons',
           browserTitle: 'Buttons',
@@ -78,10 +72,7 @@ const documentationRoutes: Routes = [
       },
       {
         path: 'button-group',
-        loadChildren: () =>
-          import('src/app/documentation/demos/button-group/button-group.demo.module').then(
-            m => m.ButtonGroupDemoModule
-          ),
+        loadChildren: 'src/app/documentation/demos/button-group/button-group.demo.module#ButtonGroupDemoModule',
         data: {
           bodyClass: 'page-button-group',
           browserTitle: 'Button Group',
@@ -89,7 +80,7 @@ const documentationRoutes: Routes = [
       },
       {
         path: 'cards',
-        loadChildren: () => import('src/app/documentation/demos/card/cards.demo.module').then(m => m.CardsDemoModule),
+        loadChildren: 'src/app/documentation/demos/card/cards.demo.module#CardsDemoModule',
         data: {
           bodyClass: 'page-cards',
           browserTitle: 'Cards',
@@ -97,8 +88,7 @@ const documentationRoutes: Routes = [
       },
       {
         path: 'checkboxes',
-        loadChildren: () =>
-          import('src/app/documentation/demos/checkboxes/checkboxes.demo.module').then(m => m.CheckboxesDemoModule),
+        loadChildren: 'src/app/documentation/demos/checkboxes/checkboxes.demo.module#CheckboxesDemoModule',
         data: {
           bodyClass: 'page-checkboxes',
           browserTitle: 'Checkboxes',
@@ -106,7 +96,7 @@ const documentationRoutes: Routes = [
       },
       {
         path: 'color',
-        loadChildren: () => import('src/app/documentation/demos/color/color.demo.module').then(m => m.ColorDemoModule),
+        loadChildren: 'src/app/documentation/demos/color/color.demo.module#ColorDemoModule',
         data: {
           bodyClass: 'page-color',
           browserTitle: 'Color Palette',
@@ -114,8 +104,7 @@ const documentationRoutes: Routes = [
       },
       {
         path: 'datagrid',
-        loadChildren: () =>
-          import('src/app/documentation/demos/datagrid/datagrid.demo.module').then(m => m.DatagridDemoModule),
+        loadChildren: 'src/app/documentation/demos/datagrid/datagrid.demo.module#DatagridDemoModule',
         data: {
           bodyClass: 'page-datagrid',
           browserTitle: 'Datagrid',
@@ -123,8 +112,7 @@ const documentationRoutes: Routes = [
       },
       {
         path: 'datepicker',
-        loadChildren: () =>
-          import('src/app/documentation/demos/datepicker/datepicker.demo.module').then(m => m.DatepickerDemoModule),
+        loadChildren: 'src/app/documentation/demos/datepicker/datepicker.demo.module#DatepickerDemoModule',
         data: {
           bodyClass: 'page-datepicker',
           browserTitle: 'Datepicker',
@@ -132,8 +120,7 @@ const documentationRoutes: Routes = [
       },
       {
         path: 'dropdowns',
-        loadChildren: () =>
-          import('src/app/documentation/demos/dropdown/dropdown.demo.module').then(m => m.DropdownDemoModule),
+        loadChildren: 'src/app/documentation/demos/dropdown/dropdown.demo.module#DropdownDemoModule',
         data: {
           bodyClass: 'page-dropdowns',
           browserTitle: 'Dropdowns',
@@ -141,7 +128,7 @@ const documentationRoutes: Routes = [
       },
       {
         path: 'forms',
-        loadChildren: () => import('src/app/documentation/demos/forms/forms.demo.module').then(m => m.FormsDemoModule),
+        loadChildren: 'src/app/documentation/demos/forms/forms.demo.module#FormsDemoModule',
         data: {
           bodyClass: 'page-forms',
           browserTitle: 'Forms',
@@ -149,7 +136,7 @@ const documentationRoutes: Routes = [
       },
       {
         path: 'grid',
-        loadChildren: () => import('src/app/documentation/demos/grid/grid.demo.module').then(m => m.GridDemoModule),
+        loadChildren: 'src/app/documentation/demos/grid/grid.demo.module#GridDemoModule',
         data: {
           bodyClass: 'page-grid',
           browserTitle: 'Grid',
@@ -157,8 +144,7 @@ const documentationRoutes: Routes = [
       },
       {
         path: 'header',
-        loadChildren: () =>
-          import('src/app/documentation/demos/header/header.demo.module').then(m => m.HeaderDemoModule),
+        loadChildren: 'src/app/documentation/demos/header/header.demo.module#HeaderDemoModule',
         data: {
           bodyClass: 'page-header',
           browserTitle: 'Header',
@@ -166,7 +152,7 @@ const documentationRoutes: Routes = [
       },
       {
         path: 'input',
-        loadChildren: () => import('src/app/documentation/demos/input/input.demo.module').then(m => m.InputDemoModule),
+        loadChildren: 'src/app/documentation/demos/input/input.demo.module#InputDemoModule',
         data: {
           bodyClass: 'input',
           browserTitle: 'Inputs',
@@ -174,7 +160,7 @@ const documentationRoutes: Routes = [
       },
       {
         path: 'internationalization',
-        loadChildren: () => import('src/app/documentation/demos/i18n/i18n.demo.module').then(m => m.I18nDemoModule),
+        loadChildren: 'src/app/documentation/demos/i18n/i18n.demo.module#I18nDemoModule',
         data: {
           bodyClass: 'i18n',
           browserTitle: 'Internationalization',
@@ -182,8 +168,7 @@ const documentationRoutes: Routes = [
       },
       {
         path: 'labels',
-        loadChildren: () =>
-          import('src/app/documentation/demos/labels/labels.demo.module').then(m => m.LabelsDemoModule),
+        loadChildren: 'src/app/documentation/demos/labels/labels.demo.module#LabelsDemoModule',
         data: {
           bodyClass: 'page-labels',
           browserTitle: 'Labels',
@@ -191,7 +176,7 @@ const documentationRoutes: Routes = [
       },
       {
         path: 'lists',
-        loadChildren: () => import('src/app/documentation/demos/lists/lists.demo.module').then(m => m.ListsDemoModule),
+        loadChildren: 'src/app/documentation/demos/lists/lists.demo.module#ListsDemoModule',
         data: {
           bodyClass: 'page-lists',
           browserTitle: 'Lists',
@@ -199,7 +184,7 @@ const documentationRoutes: Routes = [
       },
       {
         path: 'login',
-        loadChildren: () => import('src/app/documentation/demos/login/login.demo.module').then(m => m.LoginDemoModule),
+        loadChildren: 'src/app/documentation/demos/login/login.demo.module#LoginDemoModule',
         data: {
           bodyClass: 'page-login',
           browserTitle: 'Login Page',
@@ -207,7 +192,7 @@ const documentationRoutes: Routes = [
       },
       {
         path: 'modals',
-        loadChildren: () => import('src/app/documentation/demos/modal/modal.demo.module').then(m => m.ModalDemoModule),
+        loadChildren: 'src/app/documentation/demos/modal/modal.demo.module#ModalDemoModule',
         data: {
           bodyClass: 'page-modals',
           browserTitle: 'Modals',
@@ -215,7 +200,7 @@ const documentationRoutes: Routes = [
       },
       {
         path: 'navigation',
-        loadChildren: () => import('src/app/documentation/demos/nav/nav.demo.module').then(m => m.NavDemoModule),
+        loadChildren: 'src/app/documentation/demos/nav/nav.demo.module#NavDemoModule',
         data: {
           bodyClass: 'page-navigation',
           browserTitle: 'Navigation',
@@ -223,8 +208,7 @@ const documentationRoutes: Routes = [
       },
       {
         path: 'password',
-        loadChildren: () =>
-          import('src/app/documentation/demos/password/password.demo.module').then(m => m.PasswordDemoModule),
+        loadChildren: 'src/app/documentation/demos/password/password.demo.module#PasswordDemoModule',
         data: {
           bodyClass: 'page-password',
           browserTitle: 'Password',
@@ -232,10 +216,7 @@ const documentationRoutes: Routes = [
       },
       {
         path: 'progress',
-        loadChildren: () =>
-          import('src/app/documentation/demos/progress-bars/progress-bars.demo.module').then(
-            m => m.ProgressBarsDemoModule
-          ),
+        loadChildren: 'src/app/documentation/demos/progress-bars/progress-bars.demo.module#ProgressBarsDemoModule',
         data: {
           bodyClass: 'page-progress',
           browserTitle: 'Progress Bars',
@@ -243,7 +224,7 @@ const documentationRoutes: Routes = [
       },
       {
         path: 'radio',
-        loadChildren: () => import('src/app/documentation/demos/radio/radio.demo.module').then(m => m.RadioDemoModule),
+        loadChildren: 'src/app/documentation/demos/radio/radio.demo.module#RadioDemoModule',
         data: {
           bodyClass: 'page-radio',
           browserTitle: 'Radio Buttons',
@@ -251,8 +232,7 @@ const documentationRoutes: Routes = [
       },
       {
         path: 'select',
-        loadChildren: () =>
-          import('src/app/documentation/demos/select/select.demo.module').then(m => m.SelectDemoModule),
+        loadChildren: 'src/app/documentation/demos/select/select.demo.module#SelectDemoModule',
         data: {
           bodyClass: 'page-select-boxes',
           browserTitle: 'Select',
@@ -260,8 +240,7 @@ const documentationRoutes: Routes = [
       },
       {
         path: 'sidenav',
-        loadChildren: () =>
-          import('src/app/documentation/demos/sidenav/sidenav.demo.module').then(m => m.SidenavDemoModule),
+        loadChildren: 'src/app/documentation/demos/sidenav/sidenav.demo.module#SidenavDemoModule',
         data: {
           bodyClass: 'page-sidenav',
           browserTitle: 'Sidenav',
@@ -269,8 +248,7 @@ const documentationRoutes: Routes = [
       },
       {
         path: 'signposts',
-        loadChildren: () =>
-          import('src/app/documentation/demos/signposts/signpost.demo.module').then(m => m.SignpostDemoModule),
+        loadChildren: 'src/app/documentation/demos/signposts/signpost.demo.module#SignpostDemoModule',
         data: {
           bodyClass: 'page-signposts',
           browserTitle: 'Signposts',
@@ -278,8 +256,7 @@ const documentationRoutes: Routes = [
       },
       {
         path: 'spinners',
-        loadChildren: () =>
-          import('src/app/documentation/demos/spinners/spinners.demo.module').then(m => m.SpinnersDemoModule),
+        loadChildren: 'src/app/documentation/demos/spinners/spinners.demo.module#SpinnersDemoModule',
         data: {
           bodyClass: 'page-spinners',
           browserTitle: 'Spinners',
@@ -287,8 +264,7 @@ const documentationRoutes: Routes = [
       },
       {
         path: 'stack-view',
-        loadChildren: () =>
-          import('src/app/documentation/demos/stack-view/stack-view.demo.module').then(m => m.StackViewDemoModule),
+        loadChildren: 'src/app/documentation/demos/stack-view/stack-view.demo.module#StackViewDemoModule',
         data: {
           bodyClass: 'page-stack-view',
           browserTitle: 'Stack View',
@@ -296,8 +272,7 @@ const documentationRoutes: Routes = [
       },
       {
         path: 'stepper',
-        loadChildren: () =>
-          import('src/app/documentation/demos/stepper/stepper.demo.module').then(m => m.StepperDemoModule),
+        loadChildren: 'src/app/documentation/demos/stepper/stepper.demo.module#StepperDemoModule',
         data: {
           bodyClass: 'page-stepper-view',
           browserTitle: 'Stepper',
@@ -305,8 +280,7 @@ const documentationRoutes: Routes = [
       },
       {
         path: 'tables',
-        loadChildren: () =>
-          import('src/app/documentation/demos/tables/tables.demo.module').then(m => m.TablesDemoModule),
+        loadChildren: 'src/app/documentation/demos/tables/tables.demo.module#TablesDemoModule',
         data: {
           bodyClass: 'page-tables',
           browserTitle: 'Tables',
@@ -314,7 +288,7 @@ const documentationRoutes: Routes = [
       },
       {
         path: 'tabs',
-        loadChildren: () => import('src/app/documentation/demos/tabs/tabs.demo.module').then(m => m.TabsDemoModule),
+        loadChildren: 'src/app/documentation/demos/tabs/tabs.demo.module#TabsDemoModule',
         data: {
           bodyClass: 'page-tables',
           browserTitle: 'Tabs',
@@ -322,8 +296,7 @@ const documentationRoutes: Routes = [
       },
       {
         path: 'textarea',
-        loadChildren: () =>
-          import('src/app/documentation/demos/textarea/textarea.demo.module').then(m => m.TextareaDemoModule),
+        loadChildren: 'src/app/documentation/demos/textarea/textarea.demo.module#TextareaDemoModule',
         data: {
           bodyClass: 'page-textarea',
           browserTitle: 'Textarea',
@@ -331,8 +304,7 @@ const documentationRoutes: Routes = [
       },
       {
         path: 'themes',
-        loadChildren: () =>
-          import('src/app/documentation/demos/themes/themes.demo.module').then(m => m.ThemesDemoModule),
+        loadChildren: 'src/app/documentation/demos/themes/themes.demo.module#ThemesDemoModule',
         data: {
           bodyClass: 'page-tables',
           browserTitle: 'Clarity Themes',
@@ -340,8 +312,7 @@ const documentationRoutes: Routes = [
       },
       {
         path: 'toggle-switches',
-        loadChildren: () =>
-          import('src/app/documentation/demos/toggles/toggles.demo.module').then(m => m.TogglesDemoModule),
+        loadChildren: 'src/app/documentation/demos/toggles/toggles.demo.module#TogglesDemoModule',
         data: {
           bodyClass: 'page-toggle-switches',
           browserTitle: 'Toggle Switches',
@@ -349,8 +320,7 @@ const documentationRoutes: Routes = [
       },
       {
         path: 'tooltips',
-        loadChildren: () =>
-          import('src/app/documentation/demos/tooltips/tooltips.demo.module').then(m => m.TooltipsDemoModule),
+        loadChildren: 'src/app/documentation/demos/tooltips/tooltips.demo.module#TooltipsDemoModule',
         data: {
           bodyClass: 'page-tooltips',
           browserTitle: 'Tooltips',
@@ -358,8 +328,7 @@ const documentationRoutes: Routes = [
       },
       {
         path: 'tree-view',
-        loadChildren: () =>
-          import('src/app/documentation/demos/tree-view/tree-view.demo.module').then(m => m.TreeDemoModule),
+        loadChildren: 'src/app/documentation/demos/tree-view/tree-view.demo.module#TreeDemoModule',
         data: {
           bodyClass: 'page-tree-view',
           browserTitle: 'Tree View',
@@ -367,8 +336,7 @@ const documentationRoutes: Routes = [
       },
       {
         path: 'typography',
-        loadChildren: () =>
-          import('src/app/documentation/demos/typography/typography.demo.module').then(m => m.TypographyDemoModule),
+        loadChildren: 'src/app/documentation/demos/typography/typography.demo.module#TypographyDemoModule',
         data: {
           bodyClass: 'page-typography',
           browserTitle: 'Typography',
@@ -376,10 +344,7 @@ const documentationRoutes: Routes = [
       },
       {
         path: 'vertical-nav',
-        loadChildren: () =>
-          import('src/app/documentation/demos/vertical-nav/vertical-nav.demo.module').then(
-            m => m.VerticalNavDemoModule
-          ),
+        loadChildren: 'src/app/documentation/demos/vertical-nav/vertical-nav.demo.module#VerticalNavDemoModule',
         data: {
           bodyClass: 'page-vertical-nav',
           browserTitle: 'Vertical Nav',
@@ -387,8 +352,7 @@ const documentationRoutes: Routes = [
       },
       {
         path: 'wizards',
-        loadChildren: () =>
-          import('src/app/documentation/demos/wizard/wizard.demo.module').then(m => m.WizardDemoModule),
+        loadChildren: 'src/app/documentation/demos/wizard/wizard.demo.module#WizardDemoModule',
         data: {
           bodyClass: 'page-wizards',
           browserTitle: 'Wizards',
