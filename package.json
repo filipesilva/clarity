@@ -3,6 +3,8 @@
   "version": "2.0.0",
   "private": true,
   "scripts": {
+    "populate-build-cache": "node --max_old_space_size=2400 ./node_modules/@angular/cli/bin/ng build website --prod",
+    "benchmark": "benchmark -- node --max_old_space_size=2400 ./node_modules/@angular/cli/bin/ng build website --prod",
     "postinstall": "npm run website:news",
     "build:icons:web": "webpack --config webpack.icons.config.js",
     "build:icons:css": "sass --source-map --precision=8 ./src/clr-icons/clr-icons.scss ./dist/clr-icons/clr-icons.css",
@@ -96,10 +98,11 @@
     "zone.js": "~0.9.1"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "0.800.2",
+    "@angular-devkit/benchmark": "file:angular-devkit-benchmark-0.800.0-beta.18.tgz",
+    "@angular-devkit/build-angular": "0.13.9",
     "@angular-devkit/build-ng-packagr": "0.800.0",
     "@angular-devkit/core": "8.0.0",
-    "@angular/cli": "8.0.2",
+    "@angular/cli": "7.3.9",
     "@angular/compiler-cli": "8.0.0",
     "@angular/language-service": "8.0.0",
     "@compodoc/compodoc": "1.1.9",
